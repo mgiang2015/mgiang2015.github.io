@@ -10,9 +10,17 @@ const userData = {
   titleColors: ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"],
   projects: [
     {
-      title: "Tailwind Master Kit",
-      link: "https://tailwindmasterkit.com",
-      imgUrl: "/tmk.jpg",
+      title: "Danceblocks",
+      link: "https://github.com/mgiang2015/danceblocks2/",
+      imgUrl: "/danceblocks.png",
+    }, {
+      title: "Sorting Visualiser App",
+      link: "https://github.com/mgiang2015/visual-sorting-app",
+      imgUrl: "/sorting.png",
+    }, {
+      title: "Gameboy Emulator in Rust",
+      link: "https://github.com/mgiang2015/gbrust",
+      imgUrl: "/gbrust_tetris.png",
     },
   ],
   about: {
@@ -25,46 +33,33 @@ const userData = {
   },
   experience: [
     {
-      title: "Software Developer",
-      company: "mroads",
-      year: "2021",
-      companyLink: "https://mroads.com",
-      desc: "Contributed to our flagship product - Panna - which is an AI powered candidate interviewing product.",
-    },
-    {
-      title: "Founder and Developer",
-      company: "TailwindMasterKit",
-      year: "2021",
-      companyLink: "https://tailwindmasterkit.com",
-      desc: "Developed a marketplace for tailwind web components (React, HTML and Angular) and templates.",
-    },
-    {
-      title: "Founder and Developer",
-      company: "Algochurn",
-      year: "2021",
-      companyLink: "https://algochurn.com",
-      desc: "Your last moment revision friend right before a Tech coding interview. Practice problems and get hired at top Product based companies.",
-    },
-    {
-      title: "Internship",
-      company: "Intel Corporation",
-      year: "2019",
-      companyLink: "https://intel.com",
-      desc: "Developed pothole detection system with OpenCV and computer vision, detects potholes on roads and informs the driver.",
-    },
-    {
-      title: "Graduation",
-      company: "UPES, Dehradun.",
-      year: "2019",
-      companyLink: "https://upes.co.in",
-      desc: "Major in Computer Science and Engineering with a CGPA of 7.0. Nobody asks this but it's okay.",
-    },
-    {
-      title: "High School",
-      company: "Delhi Public School, Jaipur.",
-      year: "2015",
-      companyLink: "https://upes.co.in",
-      desc: "Subjects being PCM - I barely survived with 93.6% marks aggregate. Flex fridays, fellas.",
+      title: "Software Engineer Intern",
+      company: "TikTok Pte Ltd, Singapore",
+      year: "12/2021 - 07/2022",
+      companyLink: "https://www.tiktok.com/en/",
+      desc: [
+        `Maintained and refactored code base of back-end services written in Golang.`,
+        `Automated data collection tasks using CronJob. Deployed job on TikTok’s cloud infrastructure.`,
+        `Wrote proprietary Golang library for processing tabular data. Improved runtime for team’s specific use cases compared to similar open-source library.`,
+      ]
+    }, {
+      title: "Teaching Assistant",
+      company: "National University of Singapore",
+      year: "01/2021 – 05/2021",
+      companyLink: "https://nus.edu.sg/",
+      desc: [
+        `Guided 11 students to program in Java and apply Object-Oriented Programming principles.`,
+        `Received an average rating of 4.4/5. Nominated for Teaching Excellence Award.`,
+      ]
+    }, {
+      title: "Computer Science Undergraduate",
+      company: "National University of Singapore",
+      year: "08/2019 – 05/2023",
+      companyLink: "https://nus.edu.sg/",
+      desc: [
+        `Bachelor of Computing in Computer Science (Honours), Parallel Computing Specialisation`,
+        `Relevant courses: Data Structures and Algorithm, Database & Big Data Systems, Operating Systems, Multi-core Architectures, Parallel and Concurrent Programming.`,
+      ]
     },
   ],
   resumeUrl:

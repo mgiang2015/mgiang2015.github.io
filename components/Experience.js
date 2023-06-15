@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        <h1 className=" text-5xl md:text-8xl font-bold py-20 text-center md:text-left">
           Experience
         </h1>
       </div>
@@ -41,14 +41,19 @@ export default function Experience() {
 const ExperienceCard = ({ title, desc, year, company, companyLink }) => {
   return (
     <div className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
-      <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-200 font-bold dark:text-gray-800">
+      <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-black-200 font-bold dark:text-white-800">
         {year}
       </h1>
       <h1 className="font-semibold text-xl">{title}</h1>
       <a href={companyLink} className="text-gray-500">
         {company}
       </a>
-      <p className="text-gray-600 dark:text-gray-400 my-2">{desc}</p>
+      {
+        desc.map((line, index) => {
+          return <p idx={index} className="text-gray-600 dark:text-gray-400 my-2">{`- ${line}`}</p>
+        })
+      }
+      
     </div>
   );
 };
