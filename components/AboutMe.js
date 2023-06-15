@@ -158,6 +158,7 @@ export default function AboutMe() {
                   return (
                     <img
                       src={tech.url}
+                      idx={tech.name}
                       className="h-20 w-20 mx-4 my-4"
                     />
                   )
