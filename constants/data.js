@@ -25,7 +25,7 @@ const userData = {
   ],
   about: {
     title:
-      "I'm a software engineer that loves designing solutions that uses technology to solve real-world problems",
+      "I'm a software engineer who loves designing solutions that uses technology to solve real-world problems",
     description: [
     ],
     currentProject: "Danceblocks",

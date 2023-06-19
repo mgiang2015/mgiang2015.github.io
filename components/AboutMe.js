@@ -1,5 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
+import { BoxedText } from "./BoxedText";
 
 export default function AboutMe() {
   const techStack = [
@@ -46,16 +47,18 @@ export default function AboutMe() {
       <div className="bg-[#F1F1F1] -mt-0 dark:bg-gray-900">
         <div className="text-container max-w-6xl mx-auto pt-20">
           <p
-            className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
-            style={{ lineHeight: "3rem" }}
+            className="leading-loose text-2xl md:text-4xl font-semibold"
+            style={{ lineHeight: "2em" }}
           >
             {userData.about.title}. Currently working on{" "}
-            <a
-              className="bg-red-500 rounded-md px-2 py-1 text-white"
-              href={userData.about.currentProjectUrl}
-            >
-              {userData.about.currentProject}
-            </a>
+            
+              <a
+                href={userData.about.currentProjectUrl}
+              >
+                <BoxedText color="red">
+                  {userData.about.currentProject}
+                </BoxedText>
+              </a>
           </p>
         </div>
       </div>
@@ -148,10 +151,12 @@ export default function AboutMe() {
                 {desc}
               </p>
             ))}
-
-            <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              Tech Stack
-            </h1>
+            
+            <BoxedText color="red">
+              <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold">
+                Tech Stack
+              </h1>
+            </BoxedText>
             <div className="flex flex-row flex-wrap mt-8">
               {
                 techStack.map((tech) => {
