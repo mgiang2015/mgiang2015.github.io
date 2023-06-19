@@ -43,7 +43,7 @@ export default function AboutMe() {
           About Me
         </h1>
       </div>
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+      <div className="bg-[#F1F1F1] -mt-0 dark:bg-gray-900">
         <div className="text-container max-w-6xl mx-auto pt-20">
           <p
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
@@ -54,7 +54,7 @@ export default function AboutMe() {
               className="bg-red-500 rounded-md px-2 py-1 text-white"
               href={userData.about.currentProjectUrl}
             >
-              {userData.about.currentProject} ✈️
+              {userData.about.currentProject}
             </a>
           </p>
         </div>
@@ -68,12 +68,12 @@ export default function AboutMe() {
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                For any sort help / enquiry, shoot a{" "}
+                For any sort enquiry, please send me an{" "}
                 <a
                   href={`mailto:${userData.email}`}
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
-                  mail
+                  email
                 </a>{" "}
                 and I'll get back to you as soon as possible.
               </p>
