@@ -10,8 +10,8 @@ import userData from "@constants/data";
 export default function Home({ repositories }) {
   return (
     <ContainerBlock
-      title="Manu Arora - Developer, Writer, Creator"
-      description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
+      title="Le Minh Giang"
+      description="I am a software engineer with experience in both front-end and back-end projects. Get in touch with me to know more."
     >
       <Hero />
       { // These are not included as it does not add value to my HERO section. Might include it in the future
