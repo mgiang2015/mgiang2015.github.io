@@ -12,7 +12,7 @@ export default function Hero() {
           {
             userData.titles.map((title, index) => {
               return (
-              <RainbowHighlight color={userData.titleColors[index]}>
+              <RainbowHighlight key={index} color={userData.titleColors[index]}>
                 <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
                   { title }
                 </h1>

@@ -2,12 +2,12 @@ const userData = {
   githubUsername: "mgiang2015",
   name: "Le Minh Giang",
   designation: "Software Engineer",
-  avatarUrl: "/avatar.png",
+  avatarUrl: "/avatar.JPG",
   email: "le.minh.giang.work@gmail.com",
   phone: "+65 83504556",
   address: "Lorong 1 Toa Payoh, Singapore",
-  titles: ["Developer", "Designer", "Programmer", "Youtuber"],
-  titleColors: ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"],
+  titles: ["Software Developer"],
+  titleColors: ["#F59E0B"],
   projects: [
     {
       title: "Danceblocks",
