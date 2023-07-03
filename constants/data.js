@@ -6,7 +6,7 @@ const userData = {
   email: "le.minh.giang.work@gmail.com",
   phone: "+65 83504556",
   address: "Lorong 1 Toa Payoh, Singapore",
-  titles: ["Software Developer"],
+  titles: ["Software Engineer"],
   titleColors: ["#F59E0B"],
   projects: [
     {

@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="flex flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
-      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
+      <div className="flex flex-col justify-start items-start w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
         <RoughNotationGroup show={true}>
           {
             userData.titles.map((title, index) => {
@@ -21,6 +21,13 @@ export default function Hero() {
             })
           }
         </RoughNotationGroup>
+        <div className="text-container mx-auto pt-5">
+          <p
+            className="text-xl md:text-2xl font-normal"
+          >
+            {userData.about.title}.
+          </p>
+        </div>
       </div>
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
