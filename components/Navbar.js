@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import userData from "@constants/data";
+import { CircledText } from "./CircledText";
 
 export default function Navbar() {
   const router = useRouter();
@@ -37,22 +38,9 @@ export default function Navbar() {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            About{" "}
-            {router.asPath === "/about" && (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-down inline-block h-3 w-3"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                />
-              </svg>
-            )}
+            <CircledText chosen={router.asPath === "/about"} color={"red"}>
+              About
+            </CircledText>
           </Link>
           <Link
             href="/projects"
@@ -62,22 +50,9 @@ export default function Navbar() {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Projects
-            {router.asPath === "/projects" && (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-down inline-block h-3 w-3"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                />
-              </svg>
-            )}
+            <CircledText chosen={router.asPath === "/projects"} color={"green"}>
+              Projects
+            </CircledText>
           </Link>
           <Link
             href="/experience"
@@ -87,22 +62,9 @@ export default function Navbar() {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Experience{" "}
-            {router.asPath === "/experience" && (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-down inline-block h-3 w-3"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                />
-              </svg>
-            )}
+            <CircledText chosen={router.asPath === "/experience"} color={"orange"}>
+              Experience
+            </CircledText>
           </Link>
           <Link
             href="/contact"
@@ -112,22 +74,9 @@ export default function Navbar() {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Contact
-            {router.asPath === "/contact" && (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-down inline-block h-3 w-3"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                />
-              </svg>
-            )}
+            <CircledText chosen={router.asPath === "/contact"} color={"blue"}>
+              Contact
+            </CircledText>
           </Link>
         </div>
 
