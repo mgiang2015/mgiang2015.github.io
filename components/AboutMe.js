@@ -50,15 +50,7 @@ export default function AboutMe() {
             className="leading-loose text-2xl md:text-4xl font-semibold"
             style={{ lineHeight: "2em" }}
           >
-            {userData.about.title}. Currently working on{" "}
-            
-              <a
-                href={userData.about.currentProjectUrl}
-              >
-                <BoxedText color="red">
-                  {userData.about.currentProject}
-                </BoxedText>
-              </a>
+            {userData.about.title}.
           </p>
         </div>
       </div>
