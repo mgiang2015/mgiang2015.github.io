@@ -87,7 +87,7 @@ export default function Navbar() {
             }`}
           >
             <CircledText chosen={router.asPath === "/webweaver"} color={"purple"}>
-              Web Weaver Demo
+              Web Weaver AI
             </CircledText>
           </Link>
         </div>
@@ -183,7 +183,7 @@ export default function Navbar() {
           href="/webweaver"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
-          Project: Web Weaver
+          Web Weaver AI
         </Link>
       </div>
     </div>
