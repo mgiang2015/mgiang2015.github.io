@@ -78,6 +78,18 @@ export default function Navbar() {
               Contact
             </CircledText>
           </Link>
+          <Link
+            href="/webweaver"
+            className={`text-base  ${
+              router.asPath === "/contact"
+                ? "text-gray-800 font-bold dark:text-gray-400"
+                : "text-gray-600 dark:text-gray-300 font-normal "
+            }`}
+          >
+            <CircledText chosen={router.asPath === "/webweaver"} color={"purple"}>
+              Web Weaver Demo
+            </CircledText>
+          </Link>
         </div>
 
         <div className="space-x-4 flex flex-row items-center">
@@ -166,6 +178,12 @@ export default function Navbar() {
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
           Contact
+        </Link>
+        <Link
+          href="/webweaver"
+          className="text-base font-normal text-gray-600 dark:text-gray-300"
+        >
+          Project: Web Weaver
         </Link>
       </div>
     </div>
