@@ -7,6 +7,10 @@
     "build": "next build",
     "start": "next start"
   },
+  "engines" : { 
+    "npm" : "latest",
+    "node" : "latest"
+  },
   "dependencies": {
     "ai": "^3.0.13",
     "axios": "^0.21.1",
