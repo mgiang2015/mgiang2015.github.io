@@ -6,21 +6,21 @@ export default function WebWeaver() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
-        ▲ Next.js + LangChain.js Retrieval Chain 🦜🔗
+        Web Weaver 🕷️🕸️
       </h1>
       <ul>
         <li className="hidden text-l md:block">
           🔗
           <span className="ml-2">
-            This template showcases how to perform retrieval with a{" "}
+            Web Weaver takes in a URL (e.g articles from Medium, Guardian, ...) and perform {" "}
+            <a href="https://aws.amazon.com/what-is/retrieval-augmented-generation/">
+              Retrieval-Augmented Generation
+            </a>{" "}
+            with provided data using {" "}
             <a href="https://js.langchain.com/" target="_blank">
               LangChain.js
             </a>{" "}
-            chain and the Vercel{" "}
-            <a href="https://sdk.vercel.ai/docs" target="_blank">
-              AI SDK
-            </a>{" "}
-            in a{" "}
+            chain in a{" "}
             <a href="https://nextjs.org/" target="_blank">
               Next.js
             </a>{" "}
@@ -48,31 +48,10 @@ export default function WebWeaver() {
             </li>
           </ul>
         </li>
-        <li className="hidden text-l md:block">
-          💻
-          <span className="ml-2">
-            You can find the prompt and model logic for this use-case in{" "}
-            <code>app/api/chat/retrieval/route.ts</code>.
-          </span>
-        </li>
-        <li>
-          🐶
-          <span className="ml-2">
-            By default, the agent is pretending to be a talking puppy, but you
-            can change the prompt to whatever you want!
-          </span>
-        </li>
-        <li className="text-l">
-          🎨
-          <span className="ml-2">
-            The main frontend logic is found in{" "}
-            <code>app/retrieval/page.tsx</code>.
-          </span>
-        </li>
         <li className="text-l">
           🐙
           <span className="ml-2">
-            This template is open source - you can see the source code and
+            This UI is a modified version of an open source project - you can see the source code and
             deploy your own version{" "}
             <a
               href="https://github.com/langchain-ai/langchain-nextjs-template"
@@ -83,18 +62,19 @@ export default function WebWeaver() {
             !
           </span>
         </li>
-        <li className="hidden text-l md:block">
-          🔱
-          <span className="ml-2">
-            Before running this example on your own, you&apos;ll first need to
-            set up a Supabase vector store. See the README for more details.
-          </span>
-        </li>
         <li className="text-l">
           👇
           <span className="ml-2">
-            Upload some text, then try asking e.g.{" "}
-            <code>What is a document loader?</code> below!
+            Provide me with an URL, click WEAVE WEBSITE, then try asking a question below!
+          </span>
+        </li>
+        <li className="text-l">
+          💡
+          <span className="ml-2">
+            Need an example? Try{" "}
+            <a href="https://lilianweng.github.io/posts/2023-06-23-agent/">
+              this article on LLM Powered Autonomous Agents
+            </a>{" "} and ask "What is task decomposition?"
           </span>
         </li>
       </ul>
@@ -104,14 +84,14 @@ export default function WebWeaver() {
   // TODO: CHANGE API PATH
   return (
     <ChatWindow
-      endpoint="api/chat/retrieval"
+      endpoint="http://localhost:8080/rag-pinecone/stream"
       emptyStateComponent={InfoCard}
       showIngestForm={true}
       placeholder={
-        'I\'ve got a nose for finding the right documents! Ask, "What is a document loader?"'
+        'What is task decomposition?'
       }
-      emoji="🐶"
-      titleText="Dana the Document-Retrieving Dog"
+      emoji="🕷️"
+      titleText="Wallie the Web Weaver"
     ></ChatWindow>
   );
 }
