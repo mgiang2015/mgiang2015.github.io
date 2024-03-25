@@ -84,7 +84,7 @@ export default function WebWeaver() {
   // TODO: CHANGE API PATH
   return (
     <ChatWindow
-      endpoint="http://localhost:8080/rag-pinecone/stream"
+      endpoint="http://localhost:8080/rag-pinecone/invoke"
       emptyStateComponent={InfoCard}
       showIngestForm={true}
       placeholder={

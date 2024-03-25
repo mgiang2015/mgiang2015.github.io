@@ -1,4 +1,6 @@
 export function ChatMessageBubble({ message, aiEmoji, sources }) {
+  const content =  
+    message.role === "user" ? message.content : message.content.split("\",\"")[0].split("\":\"")[1]; // TODO: Change this
   const colorClassName =
     message.role === "user" ? "bg-sky-600" : "bg-slate-50 text-black";
   const alignmentClassName =
@@ -12,7 +14,7 @@ export function ChatMessageBubble({ message, aiEmoji, sources }) {
         {prefix}
       </div>
       <div className="whitespace-pre-wrap flex flex-col">
-        <span>{message.content}</span>
+        <span>{content}</span>
         {sources && sources.length ? <>
           <code className="mt-4 mr-auto bg-slate-600 px-2 py-1 rounded">
             <h2>
