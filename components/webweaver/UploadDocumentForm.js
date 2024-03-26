@@ -10,7 +10,7 @@ export function UploadDocumentsForm() {
     setIsLoading(true);
 
     // TODO: Change API path!!
-    const response = await fetch(`http://localhost:8080/rag-pinecone/website?url=${document}`, {
+    const response = await fetch(`http://54.147.175.219/rag-pinecone/website?url=${document}`, {
       method: "POST",
     });
     if (response.status === 200) {

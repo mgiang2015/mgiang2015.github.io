@@ -1,6 +1,7 @@
 export function ChatMessageBubble({ message, aiEmoji, sources }) {
-  const content =  
-    message.role === "user" ? message.content : message.content.split("\",\"")[0].split("\":\"")[1]; // TODO: Change this
+  const content =
+    message.role === "user" ? message.content : JSON.parse(message.content).output;
+
   const colorClassName =
     message.role === "user" ? "bg-sky-600" : "bg-slate-50 text-black";
   const alignmentClassName =
