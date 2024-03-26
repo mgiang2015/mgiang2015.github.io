@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start"
   },
-  "engines" : { 
-    "npm" : "latest",
-    "node" : "latest"
+  "engines": {
+    "npm": ">=10.0.0",
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "ai": "^3.0.13",
@@ -19,7 +19,7 @@
     "openai": "^4.29.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-rough-notation": "^1.0.1",
+    "react-rough-notation": "^1.0.5",
     "react-toastify": "^10.0.5"
   },
   "devDependencies": {
