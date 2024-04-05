@@ -33,8 +33,6 @@ export function ChatWindow({
       },
       onResponse(response) {
         console.log(response)
-        setFormattedInput("") // Helps with not repeating questions
-
         // const sourcesHeader = response.headers.get("x-sources");
         // const sources = sourcesHeader ? JSON.parse((Buffer.from(sourcesHeader, 'base64')).toString('utf8')) : [];
         // const messageIndexHeader = response.headers.get("x-message-index");
@@ -52,8 +50,6 @@ export function ChatWindow({
   async function sendMessage(e) {
     e.preventDefault();
 
-    setFormattedInput(input)
-
     if (messageContainerRef.current) {
       messageContainerRef.current.classList.add("grow");
     }
@@ -65,6 +61,11 @@ export function ChatWindow({
     }
 
     handleSubmit(e);
+  }
+
+  const handleInputChangeWithFormat = (e) => {
+    setFormattedInput(e.target.value);
+    handleInputChange(e);
   }
 
   return (
@@ -95,7 +96,7 @@ export function ChatWindow({
             className="grow mr-8 p-4 rounded border-solid border-2 border-slate-600"
             value={input}
             placeholder={placeholder ?? "What's it like to be a pirate?"}
-            onChange={handleInputChange}
+            onChange={handleInputChangeWithFormat}
           />
           <button type="submit" className="shrink-0 px-8 py-4 bg-sky-600 rounded w-28">
             <div role="status" className={`${isLoading ? "" : "hidden"} flex justify-center`}>
