@@ -8,3 +8,4 @@ This portfolio website is built with help from a blog by [freeCodeCamp](https://
 - [tailwindcss](https://tailwindcss.com) for styling.
 - [React Rough Notation](https://roughnotation.com) for Hero section highlighting.
 - [Vercel](https://vercel.com) for deployments and CI/CD.
+- [Vercel AI SKD](https://sdk.vercel.ai) for implementing Web Weaver AI Demo
