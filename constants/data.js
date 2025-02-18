@@ -103,7 +103,7 @@ const userData = {
     }
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1Pc_1D9MW71x2XjwxQ9-7ttqg24W5b1QC/view?usp=sharing",
+    "https://drive.google.com/file/d/1UGtK561GUDpbdccMklSFUo4jMYW7BD1a/view?usp=sharing",
   socialLinks: {
     instagram: "https://instagram.com/thedecoyg",
     linkedin: "https://www.linkedin.com/in/leminhgiang",
