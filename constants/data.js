@@ -41,14 +41,25 @@ const userData = {
   },
   experience: [
     {
+      title: "Junior Fullstack Developer",
+      company: "Climate Impact X",
+      year: "05/2024 - present",
+      companyLink: "https://www.climateimpactx.com/",
+      desc: [
+        `Maintained and developed new features for core marketplace, auction and portal platforms built using Java Spring Boot and React TypeScript; wrote extensive unit and integration tests.`,
+        `Resolved major bug tickets and developed 3 features end-to-end, integrating with various databases like PostgresQL, MongoDB and external CMS systems.`,
+        `Collaborated cross-functionally with QA, BA, Data Engineers, SRE, and Operations. Utilized industry tools such as ArgoCD, Kubernetes, and New Relic for monitoring and deployment.`,
+      ]
+    },
+    {
       title: "Presales IT Consultant",
       company: "FPT Asia Pacific (FAP)",
-      year: "07/2023 - present",
+      year: "07/2023 - 05/2024",
       companyLink: "https://fptsoftware.com/fpt-asia-pacific",
       desc: [
-        `Conduct lead qualification, client analysis and requirement discovery sessions.`,
-        `Craft and review proposals for development and maintenance of enterprise solutions.`,
-        `Specialise in solutions using leverage generative AI and LLM technologies.`,
+        `Drive growth by crafting proposals for development and maintenance of enterprise solutions. Specialise in GenAI solutions.`,
+        `Demonstrate cloud concepts like responsibility model, compute, storage and serverless effectively to clients.`,
+        `Lead Retrieval-Augmented Generation (RAG) R&D project with team of 5. Leverage LLM and Semantic Search technologies to optimise document search and improve efficiency.`,
         `Supervise 6 Software Engineer Interns and provide guidance for their internship projects.`,
       ]
     },
@@ -58,9 +69,9 @@ const userData = {
       year: "12/2021 - 07/2022",
       companyLink: "https://www.tiktok.com/en/",
       desc: [
-        `Maintain and implement new REST API end-points for Golang-based backend service.`,
-        `Automate data collection tasks.`,
-        `Write custom proprietary Golang library for processing tabular data.`,
+        `Develop REST API for Golang-based web service which is used by 20 team members, and ensure high availability.`,
+        `Automate data collection tasks using a CronJob to reduce time engineers spent on manual data retrieval.`,
+        `Write Golang library for processing tabular data for team's use cases. Reduce runtime by 37% compared to open-source libs.`,
       ]
     }, {
       title: "Teaching Assistant",
