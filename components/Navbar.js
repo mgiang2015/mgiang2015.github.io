@@ -78,7 +78,7 @@ export default function Navbar() {
               Contact
             </CircledText>
           </Link>
-          <Link
+          {/* <Link
             href="/webweaver"
             className={`text-base  ${
               router.asPath === "/contact"
@@ -89,7 +89,7 @@ export default function Navbar() {
             <CircledText chosen={router.asPath === "/webweaver"} color={"purple"}>
               Web Weaver AI
             </CircledText>
-          </Link>
+          </Link> */}
         </div>
 
         <div className="space-x-4 flex flex-row items-center">
